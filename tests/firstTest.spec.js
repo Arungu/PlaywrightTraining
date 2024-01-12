@@ -2,28 +2,28 @@ const {test,expect, chromium} = require('@playwright/test');
 const { timeStamp } = require('console');
 //const exp = require('constants');
 
-// test('Google tittle Assertion', async ({page})=>{
+test('Google tittle Assertion', async ({page})=>{
 
-// await page.goto("https://www.google.com/");
-// await expect(page).toHaveTitle('Google');
+await page.goto("https://www.google.com/");
+await expect(page).toHaveTitle('Google');
 
 
-// });
-// test('Hotal App tittle Assertion', async ({page})=>{
+});
+test('Hotal App tittle Assertion', async ({page})=>{
 
-//     await page.goto("https://adactinhotelapp.com/index.php");
+    await page.goto("https://adactinhotelapp.com/index.php");
     
-//     await expect(page).toHaveTitle('Adactin.com - Hotel Reservation System');
+    await expect(page).toHaveTitle('Adactin.com - Hotel Reservation System');
 
-//     // await page.locator('id=username').fill("ArunGurusamy");
-//     // await page.locator('id=password').fill("Gurukanth!20");
-//     // await page.locator('#login').click();
-//     // await page.waitForTimeout(2000);
+    // await page.locator('id=username').fill("ArunGurusamy");
+    // await page.locator('id=password').fill("Gurukanth!20");
+    // await page.locator('#login').click();
+    // await page.waitForTimeout(2000);
     
     
-//     });
+    });
 
-    test.only('Google tittle Assertion', async ({page})=>{
+    test(' Assertion', async ({page})=>{
     // const browser = await chromium.launch({headless:false});
     // const context = await browser.newContext({
 

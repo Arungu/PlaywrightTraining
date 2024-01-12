@@ -14,7 +14,7 @@ await page.waitForTimeout(2000);
 
 })
 
-test.only('Mouse Action', async({page})=>{
+test('Mouse Action', async({page})=>{
 
     await page.goto("https://www.amazon.in/");
     //await page.locator('id=username').fill("ArunGurusamy");

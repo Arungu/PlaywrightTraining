@@ -20,7 +20,7 @@ await page.waitForTimeout(5000);
 
 })
 
-test.only('Multiple Frame', async({page})=>{
+test('Multiple Frame', async({page})=>{
 
     await page.goto("https://the-internet.herokuapp.com/nested_frames");
 

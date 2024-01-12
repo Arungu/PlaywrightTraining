@@ -28,7 +28,7 @@ test('Popup', async ({ page }) => {
 
 })
 
-test.only('Model Popup', async ({ page }) => {
+test('Model Popup', async ({ page }) => {
 
     await page.goto("http://autopract.com/selenium/popup/");
 

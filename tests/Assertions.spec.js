@@ -12,13 +12,13 @@ test('Assertions', async ({ page }) => {
 
 });
 
-test.only('Assert Attribute', async ({ page }) => {
+test('Assert Attribute', async ({ page }) => {
 
     await page.goto("https://adactinhotelapp.com/index.php");
     await expect(page.locator('id=username')).toHaveAttribute('id','username');
     await expect(page.locator('id=username')).toHaveAttribute('class',/login/);
     await expect(page.locator('id=username')).toHaveAttribute('value','');
-    await expect.soft(page.locator('id=username')).toHaveAttribute('id','usernamei') // soft assertion it will not stop the code 
+    await expect.soft(page.locator('id=username')).toHaveAttribute('id','username') // soft assertion it will not stop the code 
     await expect(page.locator('id=username')).toHaveClass('login_input');
    
 

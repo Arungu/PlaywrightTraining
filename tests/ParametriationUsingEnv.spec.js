@@ -9,7 +9,8 @@ test(`test with ${process.env.LOGIN}`,async({page})=>{
 
     console.log(process.env.LOGIN,process.env.PASSWORD);
     console.log(process.env.WEB_URL);
-    await page.goto("https://adactinhotelapp.com/index.php");
+   // await page.goto("https://adactinhotelapp.com/index.php");
+    await page.goto(process.env.WEB_URL);
     await page.locator('id=username').fill(process.env.LOGIN);
     await page.locator('id=password').fill(process.env.PASSWORD);
     await page.locator('#login').click();

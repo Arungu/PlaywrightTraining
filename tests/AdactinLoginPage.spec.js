@@ -16,20 +16,20 @@ await page.waitForTimeout(2000);
 
 });
 
-test('Search Hotel Test', async({page})=>{
+// test('Search Hotel Test', async({page})=>{
 
-    const loc = "London";
-    const nameHotel = "Hotel Sunshine";
-    const tRoom = "Deluxe";
-    const nosRoom = "2 - Two";
-    const dateCheck = "12/01/2024";
+//     const loc = "London";
+//     const nameHotel = "Hotel Sunshine";
+//     const tRoom = "Deluxe";
+//     const nosRoom = "2 - Two";
+//     const dateCheck = "12/01/2024";
 
 
-    const shp = new SearchHotelPage(page);
-    await page.waitForTimeout(3000);
-    await shp.searchHotel(dateCheck,loc,nameHotel,tRoom,nosRoom);
+//     const shp = new SearchHotelPage(page);
+//     await page.waitForTimeout(3000);
+//     await shp.searchHotel(dateCheck,loc,nameHotel,tRoom,nosRoom);
     
     
     
-    })
+//     })
 

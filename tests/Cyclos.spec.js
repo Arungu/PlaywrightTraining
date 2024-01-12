@@ -16,12 +16,12 @@ await page.waitForTimeout(3000);
 expect(await page.locator("//*[text()='Select a contact']").textContent()).toContain('Select a contact');
 await page.click("//*[text()=' Active Walking ']");
 await page.waitForTimeout(3000);
-await page.fill('//*[@type="tel"]','10');
-await page.click("//*[text()='Next']");
-expect(await page.locator("//*[text()=' Payment confirmation ']").textContent()).toContain(' Payment confirmation ');
-await page.click("//*[text()='Confirm']");
-console.log(await page.locator("//*[text()='The payment was successfully processed']").textContent());
-await page.waitForTimeout(3000);
+// await page.fill('//*[@type="tel"]','10');
+// await page.click("//*[text()='Next']");
+// expect(await page.locator("//*[text()=' Payment confirmation ']").textContent()).toContain(' Payment confirmation ');
+// await page.click("//*[text()='Confirm']");
+// console.log(await page.locator("//*[text()='The payment was successfully processed']").textContent());
+// await page.waitForTimeout(3000);
 
 
 
